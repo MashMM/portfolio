@@ -9,7 +9,8 @@ export default function NavBar() {
         </a>
         <div className="flex items-center text-lg">
           <a className="mr-10 w400:mr-7" href="">Experience</a>
-          <a className="mr-10 w400:mr-7" href="/about">Projects</a>
+          <a className="mr-10 w400:mr-7" href="/">Projects</a>
+          <ThemeSwitcher />
         </div>
       </div>
     </nav>
