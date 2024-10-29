@@ -9,6 +9,15 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				smallHeight: { raw: '(max-height: 550px)' },
+				w800: { max: '800px' },
+				w700: { max: '700px' },
+				w600: { max: '600px' },
+				w500: { max: '500px' },
+				w450: { max: '450px' },
+				w400: { max: '400px' },
+			},
 			colors: {
 				main: '#88aaee',
 				mainAccent: '#4d80e6', // not needed for shadcn components
