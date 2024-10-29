@@ -1,18 +1,34 @@
-import { ThemeSwitcher } from "./theme-switcher";
+'use client'
 
-export default function NavBar() {
+import clsx from 'clsx'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { ThemeSwitcher } from './theme-switcher'
+
+export default function Nav() {
+  const path = usePathname()
+
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full px-5">
-      <div className="z-50 mx-auto mt-5 flex h-[70px] w-full max-w-[860px] items-center justify-between rounded-base border-2 border-border bg-white px-5 text-text dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText">
-        <a href="/">
-          <h2 className="text-3xl font-heading">Mashhood Manzoor</h2>
-        </a>
-        <div className="flex items-center text-lg">
-          <a className="mr-10 w400:mr-7" href="">Experience</a>
-          <a className="mr-10 w400:mr-7" href="/">Projects</a>
-          <ThemeSwitcher />
-        </div>
-      </div>
+    <nav className="border-b-border dark:border-b-darkBorder grid h-[50px] grid-cols-[1fr_1fr_50px] rounded-tr-base border-b-4 bg-black text-xl w600:text-lg w400:h-10 w400:text-base portrait:rounded-none">
+      <Link
+        className={clsx(
+          'flex h-full items-center justify-center uppercase',
+          path === '/' ? 'bg-black text-white' : 'text-text bg-main',
+        )}
+        href="/"
+      >
+        Home
+      </Link>
+      <Link
+        className={clsx(
+          'flex h-full items-center justify-center uppercase',
+          path === '/work' ? 'bg-black text-white' : 'text-text bg-main',
+        )}
+        href="/"
+      >
+        Projects
+      </Link>
+      <ThemeSwitcher />
     </nav>
-  );
-};
+  )
+}
