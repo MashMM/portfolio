@@ -7,7 +7,7 @@ import Nav from '@/components/navbar'
 const archivo = Archivo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'John Doe',
+  title: 'Mashhood',
 }
 
 export default function RootLayout({
