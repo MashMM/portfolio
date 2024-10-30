@@ -26,7 +26,7 @@ export default function Nav() {
           'flex h-full items-center justify-center uppercase border-l-2 border-border dark:border-darkBorder',
           path === '/experience' ? 'bg-black text-white' : 'text-text bg-main',
         )}
-        href="/"
+        href="/experience"
       >
         <span className="hidden w400:inline"><Briefcase /></span>
         <span className="w400:hidden">Experience</span>
@@ -34,9 +34,9 @@ export default function Nav() {
       <Link
         className={clsx(
           'flex h-full items-center justify-center uppercase border-l-2 border-border dark:border-darkBorder',
-          path === '/experience' ? 'bg-black text-white' : 'text-text bg-main',
+          path === '/projects' ? 'bg-black text-white' : 'text-text bg-main',
         )}
-        href="/"
+        href="/projects"
       >
         <span className="hidden w400:inline"><Folder /></span>
         <span className="w400:hidden">Projects</span>
@@ -44,9 +44,9 @@ export default function Nav() {
       <Link
         className={clsx(
           'flex h-full items-center justify-center uppercase border-l-2 border-border dark:border-darkBorder',
-          path === '/projects' ? 'bg-black text-white' : 'text-text bg-main',
+          path === '/education' ? 'bg-black text-white' : 'text-text bg-main',
         )}
-        href="/"
+        href="/education"
       >
         <span className="hidden w400:inline"><GraduationCap /></span>
         <span className="w400:hidden">Education</span>
