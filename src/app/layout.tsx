@@ -31,9 +31,9 @@ export default function RootLayout({
                 <span className="text-text inline-block">MASHHOOD MANZOOR</span>
               </h1>
             </header>
-            <main className="dark:bg-darkBg relative flex h-[800px] max-h-[100dvh] flex-col rounded-br-base rounded-tr-base bg-bg font-semibold portrait:h-[100dvh] portrait:max-h-[100dvh] portrait:rounded-none">
+            <main className="dark:bg-darkBg relative flex h-[800px] max-h-[100dvh] max-w-[100dvh] flex-col rounded-br-base rounded-tr-base bg-bg font-semibold portrait:h-[100dvh] portrait:max-h-[100dvh] portrait:rounded-none">
               <Nav />
-              <div className="main h-full max-h-[750px] overflow-y-auto portrait:max-h-[calc(100dvh-50px)]">
+              <div className="main h-full max-h-[750px] max-w-[900px] overflow-y-auto portrait:max-h-[calc(100dvh-50px)]">
                 {children}
               </div>
             </main>
